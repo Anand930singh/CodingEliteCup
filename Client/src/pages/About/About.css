@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+.about {
+  /* height: 100vh; */
+  margin-top:3rem;
+  width: 100%;
+  /* background: radial-gradient(circle at 73% 50%, #35353696 -200%, #050505 100%); */
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutTagLine {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  animation: fadeIn 2s;
+  transition: transform 0.3s;
+  /* border-radius: 25%; */
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.aboutBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutDetails{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.problemStatementCard{
+  position: relative;
+  width: 95%;
+  background: rgba(38, 150, 200, 0.04);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(38, 150, 200, 0.05);
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.411);
+  margin-bottom: 2rem;
+}
+
+.problemStatementCard:hover{
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.411);
+}
+
+.solutionCard:hover{
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.411);
+}
+
+.teamCard{
+  position: relative;
+  width: 95%;
+  background: rgba(38, 150, 200, 0.04);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(38, 150, 200, 0.05);
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.411);
+  margin-bottom: 2rem;
+}
+
+.teamCard:hover{
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.411);
+}
+
+.contentProblem{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  display:flex;
+  flex-direction: row;
+}
+.content{
+  position:relative;
+  width: 55%;
+}
+.icon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:45%;
+  top:-2rem;
+}
+.icon img{
+  height: 15rem;
+}
+
+.aboutTagLine:hover{
+  box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 748px) {
+
+  .aboutBody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+.cardHead{
+  font-family: 'Playfair Display';
+  font-size: 3.2rem;
+  color: #abbe00;
+  font-style: bold;
+  font-weight: bold;
+  animation: fadeIn 3s;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.line-one span{
+  color: #abbe00;
+  font-style: bold;
+  font-weight: bold;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.solutionCard{
+  position: relative;
+  width: 95%;
+  background: rgba(38, 150, 200, 0.04);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(38, 150, 200, 0.05);
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.411);
+  margin-bottom: 2rem;
+}
+
+.contentSolution{
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+.solutionCard .cardHead{
+  text-align-last: right;
+  margin-right:3rem
+}
+
+.featureCard{
+  position: relative;
+  width: 95%;
+  background: rgba(38, 150, 200, 0.04);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(38, 150, 200, 0.05);
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.411);
+  margin-bottom: 2rem;
+}
+.contentFeature{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  display:flex;
+  flex-direction: row;
+}
+
+@media (max-width: 932px) {
+
+  .problemStatementCard,.contentSolution,.contentFeature{
+    padding-right:1rem;
+  }
+
+  .contentFeature, .contentSolution, .contentProblem{
+    flex-direction: column;
+  }
+  .icon{
+    top:1rem;
+    width:100%;
+    align-items: center;
+  }
+  .solutionCard .cardHead{
+    text-align-last: left;
+    margin-right:3rem
+  }
+  .contentSolution{
+    margin-left:2rem;
+  }
+  .content{
+    width:100%;
+  }
+}

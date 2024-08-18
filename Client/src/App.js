@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css'
 import About from './pages/About/About'
-import Predict from './pages/Predict/Predict';
+import Prediction from './pages/Prediction/Prediction';
 import Loader from './components/Loader/Loader';
 import Offers from './pages/Offers/Offers';
 import { Analytics } from "@vercel/analytics/react"
@@ -34,7 +34,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/about" element={<About />} />
-              <Route exact path="/predict" element={<Predict />} />
+              <Route exact path="/predict" element={<Prediction />} />
               <Route exact path="/offers" element={<Offers />} />
               <Route exact path="/contact" element={<ContactUs />} />
               <Route exact path="/matchdetail/:matchId/:team1Id/:team2Id" element={<MatchDetail />} />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
 import { RxCross2 } from "react-icons/rx";
-import "./Predict.css";
+import "./Prediction.css";
 import PredictedDetail from "../../components/PredictedDetail/PredictedDetail";
 import {
   BattersName,
@@ -29,7 +29,7 @@ import {
 import { BowlingPrediction, BowlingWicketPrediction } from "../../prediction_model/bowling";
 import PredictBowlerDetail from "../../components/PredictBowlerDetail/PredictBowlerDetail";
 
-function Predict() {
+function Prediction() {
   const [selectedOption, setSelectedOption] = useState("option1");
   const [player, setplayer] = useState("");
   const [selectedFormat, setSelectedFormat] = useState("");
@@ -282,4 +282,4 @@ function Predict() {
   );
 }
 
-export default Predict;
+export default Prediction;
